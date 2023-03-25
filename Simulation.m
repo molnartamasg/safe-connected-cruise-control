@@ -3,8 +3,8 @@ clear; clc;
 
 %% Problem setup
 % Setup and parameters
-par.p=@(v)0*v.^2;           % resistance term [m/s^2]	% 0.1+3e-4*v.^2
 par.xi=0.5;                 % first-order lag [s]
+par.p=@(v)0*v.^2;           % resistance term [m/s^2]	% 0.1+3e-4*v.^2
 % desired controller
 par.Dst=5;                  % standstill distance [m]
 par.kappa=0.6;              % range policy gradient [1/s]
